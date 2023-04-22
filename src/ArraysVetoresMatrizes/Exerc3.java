@@ -63,7 +63,7 @@ public class Exerc3 {
 				}
 			}
 		}
-		System.out.println("A soma dos elementos da diagonal primaria é: "+ds);
+		System.out.println("A soma dos elementos da diagonal secundaria é: "+ds);
 
 	}
 

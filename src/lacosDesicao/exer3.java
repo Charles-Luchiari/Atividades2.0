@@ -13,16 +13,20 @@ public class exer3 {
 		Scanner ler = new Scanner(System.in);
 		
 		System.out.println("Digite o nome do doador: ");
-		nome = ler.next();
+		nome = ler.nextLine();
 		System.out.println("Digite a idade do doador: ");
 		idade = ler.nextInt();
 		System.out.println("Primeira doação de sangue? ");
 		doou = ler.nextBoolean();
 		
-		if (idade>18 && idade<60 && doou) {
-			if(idade>=60 && idade<=69) {
-				
+		if (idade>=18 && idade<=69 && doou) {
+			if(idade>=60 && doou) {
+				System.out.println(nome+" não está apto para doar!");
+			} else {
+				System.out.println(nome+" está apto para doar!");
 			}
+		} else {
+			System.out.println(nome+" está apto para doar!");
 		}
 		
 		
